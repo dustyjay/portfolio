@@ -1,0 +1,49 @@
+body {
+  background-color: #E5E3D7;
+  border-top: 3px solid rgb(105, 4, 4);
+  padding: 0px 2rem;
+  min-height: 100vh;
+  line-height: 2;
+}
+
+.title {
+  font-size: 2rem;
+  border-bottom: 1px solid rgba(187, 187, 187, 0.644);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  box-shadow: 0px 4px 10px rgba(187, 187, 187, 0.644);
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  padding: 2rem 0.75rem;
+  text-align: center;
+  position: relative;
+}
+
+.card-img {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  transition: 500ms linear;
+}
+
+.card-img__meta {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.card:hover .card-img {
+  transform: scale(1.2);
+}
+
+.link {
+  text-decoration: underline;
+  text-decoration-line: underline;
+}
