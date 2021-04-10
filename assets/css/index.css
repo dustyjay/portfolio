@@ -1,5 +1,5 @@
 body {
-  background-color: #E5E3D7;
+  background-color: #f1f1f1;
   border-top: 3px solid rgb(105, 4, 4);
   padding: 0px 2rem;
   min-height: 100vh;
@@ -24,8 +24,8 @@ body {
 
 .card-img {
   display: inline-block;
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   object-fit: contain;
   transition: 500ms linear;
 }
@@ -46,4 +46,46 @@ body {
 .link {
   text-decoration: underline;
   text-decoration-line: underline;
+}
+
+.social {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 1.5rem;
+}
+
+.social-icon:hover {
+  animation: socials 1500ms linear infinite;
+}
+
+.social-icon:last-child {
+  margin-right: 0;
+}
+
+@keyframes socials {
+  0% {
+    transform: translate(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  60% {
+    transform: translateY(-15px) rotateY(90deg);
+  }
+
+  70% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+
+    transform: translateY(0);
+  }
 }
